@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(/css/font/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'montserrat';
+}
+
+/* first image above */
+
+.entry-pic img{
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+    object-fit: cover;
+}
+/* 
+.entry-description{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    
+} */
+.entry-pic h2{
+    position: absolute;
+    top: 32%;
+    left: 42%;
+    text-align: center;
+    z-index: 3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.entry-pic p{
+    position: absolute;
+    top: 43%;
+    left: 33%;
+    z-index: 3;
+    color: white;
+    /* text-transform: uppercase; */
+    font-size: 20px;
+}
+
+/* .entry-pic::after{
+    content: '';
+    position: absolute;
+    top: 26.5%;
+    left: 0;
+    height: 19.8rem;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.4;
+} */
+
+/* pricing part */
+.pricing-container{
+    margin: 5rem 3rem 0 3rem;
+}
+
+.pricing-container h2 p{
+    padding: 20px ;
+}
+.p-major-a{
+    padding: 3rem;
+    margin: 0 5rem;
+}
+.p-major-a h2{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.p-major-a p{
+    margin: 0 5rem;
+    text-align: center;
+}
+.p-major{
+    display: flex;
+    padding: 8rem;
+}
+.pricing1 p{
+    margin: 0 2rem;
+    text-align: center;
+}
+.pricing1 h2{
+    margin: 0 0 1rem 2rem;
+    text-align: center;
+}
+
+.pricing2 p{
+    margin: 0 2rem;
+    text-align: center;
+}
+.pricing2 h2{
+    margin: 0 0 1rem 2rem;
+    text-align: center;
+}
+.price-tag{
+    color: green;
+    font-weight: bold;
+}
+.appointment{
+    margin: 0 0 3rem 40rem;
+    padding:.9rem;
+    text-transform: uppercase;
+    color: #000;
+    background: white;
+    font-weight: bold;
+    border:2px solid #000;
+    outline: none;
+}
+
+.appointment:hover{
+    transition: 0.5s;
+    background: #000;
+    color: white;
+}
+
+.cut-gallery{
+    display: flex;
+    justify-content: center;
+}
+.cut-gallery img{
+    width: 20%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 0 3rem 2rem;
+}
+
+/* footer */
+.footer h2{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer p{
+    text-align: center;
+    margin: 3rem;
+}
+
+.footer::after{
+    content: '';
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+}
+.bottom-links-carrier{
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    list-style: none;
+}
+.bottom-home{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bottom-links {
+    padding: 0 0 0 5rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bottom-links:hover{
+    font-size: 23px;
+    transition: 0.5s;
+}
+
+
+.bottom-home:hover{
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.your-experience{
+    padding: 3rem;
+    margin: 0 5rem;
+}
+.your-experience h2{
+    text-align: center;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+
+}
+.your-experience p{
+    margin: 0 8rem;
+    text-align: center;
+    color: rgb(65, 65, 65);
+}
+/* media query */
+@media (max-width: 480px){
+
+    /* navigation bar start */
+    
+    
+    .entry-pic h2{
+        font-size: 2.5rem;
+        margin: -1rem 0 0 -2rem;
+    }
+
+    .entry-pic p{
+        text-align: center;
+        margin: -2rem 1rem 0 -7.5rem;
+        font-size: 1rem;
+    }
+    .p-major-a h2{
+        margin: 0 -2rem 1rem -2rem;
+    }
+
+    .p-major-a p{
+        margin: 0 -5rem 0 -5rem ;
+        text-align: center;
+    }
+
+    .p-major{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-major .pricing1 h2{
+        font-size: 2rem;
+        margin:1rem -2rem;
+    }
+
+    .p-major .pricing1 p{
+        margin: 10rem 0 0 0;
+    }
+
+    /* .pricing1 .price-tag{
+        background: #000;
+        color: yellow;
+        padding:1rem ;
+        width: 100px;
+        height: 100px;
+        padding-top:1.5rem ;
+        /* margin: 1rem 0 0 0; */
+        /* position: absolute;
+        z-index: -1;
+        left: 45%;
+        border-radius: 20rem;
+    } */ 
+
+    .price-tag{
+        background: #000;
+        padding:1rem ;
+        width: 120px;
+        height: 120px;
+        padding-top:1.5rem ;
+        margin: 0 0 0 0;
+        position: absolute;
+        z-index: -1;
+        left: 35%;
+        border-radius: 20rem;
+    }
+
+    .price-tag h2{
+        color:yellow;
+        font-size: 1rem;
+    }
+    
+    .p-major .pricing2 h2{
+        margin: 2rem 0 0 0;
+        font-size: 2rem;
+    }
+    .pricing1{
+        margin: 0 -5rem 0 -5rem;
+    }
+
+    .pricing2{
+        margin: 0 -10rem 0 -10rem;
+    }
+
+    .pricing1 p{
+        margin:0 -4rem 0 -4rem;
+        padding: 0 -10rem 0 -19rem;
+    }
+    .price-tag{
+        background: #000;
+        padding:1rem ;
+        width: 120px;
+        height: 120px;
+        padding-top:1.5rem ;
+        margin: 0 0 0 0;
+        position: absolute;
+        z-index: -1;
+        left: 35%;
+        border-radius: 20rem;
+    }
+
+    #priceTag2{
+        margin: 1rem 0 0 0;
+    }
+
+    #priceTag2 h2{
+        font-size: 1.5rem;
+        margin: 1.3rem 0 0 0;
+    }
+
+    
+
+    .price-tag h2{
+        color:yellow;
+        
+    }
+    .pricing2 p{
+        margin: 10rem -5rem 0 -2rem;
+        padding: 0 7rem 0 5rem;
+        text-align: center;
+    }
+
+    .appointment{
+        margin: 6rem 1rem 4rem 1rem;
+        width: 100%;
+    }
+
+    .cut-gallery{
+        margin: 0 -6rem 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cut-gallery img{
+        width: 25rem;
+        height: 50%;
+    }
+
+    .your-experience p{
+        margin: 0 -5rem 0 -5rem;
+    }
+
+    .bottom-links-carrier{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 3rem 6rem;
+    }
+    .bottom-home{
+        margin: 0 0 0 3.5rem;
+    }
+    .bottom-links{
+        margin: 0 0 0 -2rem;
+    }
+
+    .bottom-links-carrier li{
+        padding: 1.5rem;
+    }
+
+    .bottom-links, .bottom-home{
+        text-align: center;
+    }
+
+    .footerTitle{
+        margin: 0 0 0 1rem;
+    }
+
+    .footerP{
+        margin: 0 0 0 5rem;
+        text-align: center;
+    }
+
+    /* social media */
+    .social-media{
+        margin: 0 0 2rem 6rem ;
+    }
+    .social-media i{
+        font-size: 2rem;
+        color: black;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .social-media i:hover{
+        transform: rotate(-45deg);
+        transition: 0.2s;
+        font-size: 2.5rem;
+        /* text-shadow: 0 5px 10px rgba(0, 0, 0, 0.405); */
+        box-shadow:0 5px 10px rgba(0, 0, 0, 0.405) ;
+        border-radius: 20rem;
+    }
+
+}

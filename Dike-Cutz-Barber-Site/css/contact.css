@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(/css/font/Montserrat-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+
+/* image background */
+/* .background{
+    background-image: url(/css/images/img\ \(5\).jpg);
+    color: white;
+    width: 100%;
+    height:150vh;
+    background-size: cover;
+} */
+
+.gradient_bg{
+    background-image: linear-gradient(to bottom, #00042898, #004e9283), url(/css/images/img\ \(5\).jpg);
+    width:100%;
+    height:150vh;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+/* form */
+.form-container{
+    max-width: 1000px;
+    margin: 10rem auto;
+    box-shadow: 4px 4px 5px rgb(187, 187, 187);
+}
+
+.custom-form{
+    display: flex;
+    margin: 1rem 0 2rem 0;
+}
+
+.contact-info{
+    padding: 2rem;
+    background-color: #fff;
+    width: 500px;
+}
+
+.contact-info h2{
+    margin: 0 0 2rem 0;
+}
+
+.contact-info p{
+    margin: 0 0 1rem 0;
+    padding: 0 2rem 0 0;
+}
+.contact-email{
+    display: flex;
+    margin: 1rem 0 2rem 0;
+}
+
+
+.contact-email i{
+    margin: 0 1rem 0 0;
+    font-size: 1.3rem;
+}
+
+.contact-phone{
+    display: flex;
+    margin: 1rem 0 2rem 0;
+}
+
+.contact-phone i{
+    margin: 0 1rem 0 0;
+    font-size: 1.3rem;
+}
+.contact-address{
+    display: flex;
+    margin: 1rem 0 2rem 0;
+}
+.contact-address i{
+    font-size: 1.3rem;
+    margin: 0 1rem 0 0;
+}
+
+/* part2 */
+.user-contact-info{
+    padding: 2rem;
+    background-color: rgb(218, 218, 218);
+    width: 500px;
+}
+
+.user-contact-info h2{
+    font-size: 1.4rem;
+    margin: 0 0 2rem 0;
+}
+
+.user-contact-info input{
+    padding: 0.3rem;
+    width: 100%;
+}
+
+.contact-us{
+    padding: 0.7rem;
+    background-color: #000;
+    color: white;
+    border-style: none;
+    font-weight: bold;
+}
+
+.contact-us:hover{
+    background-color: rgb(29, 29, 29);
+}
+
+
+/* site responsiveness */
+@media (max-width: 480px){
+        .form-container{
+        padding: 0 2rem 0 0;
+    }
+    #custom-form{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        margin: -7rem 0 0 0;
+    }
+}
+
+
+

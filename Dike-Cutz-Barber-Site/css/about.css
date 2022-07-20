@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(/css/font/Montserrat-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+/* welcome photo */
+.entry-pic img{
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+    object-fit: cover;
+}
+
+/* .entry-description{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    
+} */
+.entry-description h2{
+    text-align: center;
+    z-index: 3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    /* margin: -5rem 0 0 0; */
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    /* border: 2px dashed rgb(255, 6, 6); */
+}
+.entry-description p{
+    z-index: 3;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+/* .entry-pic::after{
+    content: '';
+    position: absolute;
+    top: 27.5%;
+    left: 0;
+    height: 20rem;
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+} */
+/* the header- the barbers */
+.thebarbers{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8rem 0 -3rem 0;
+    font-size: 3rem;
+}
+
+/* cards with the owners in it */
+/* Card Animation */
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#container2{
+    margin: -5rem 0 0 0;
+}
+
+.card{
+    position: relative ;
+    width: 500px;
+    height: 250px;
+    border-radius:20px;
+    display: flex;
+    align-items: center; 
+    transition: 0.5s;
+}
+.card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; 
+    overflow: hidden;
+    
+}
+
+.card .circle::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #888888;
+    clip-path:circle(120px at center) ;
+    transition: 0.5s;
+}
+
+.card:hover .circle:before{
+    background: #1d1d1d;
+    clip-path:circle(400px at center);
+}
+
+.card img{
+    height: 15rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    left: 72%;
+    height: 400px;
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    transition:0.5s;
+    opacity:0;
+    color: white;
+}
+
+.card:hover .content{
+    opacity: 1;
+}
+
+.card .image2{
+    height: 22rem;
+}
+
+.card:hover .image2{
+    left: 80%;
+    height: 500px;
+}
+
+.card:hover .image4{
+    left: 80%;
+    height: 400px;
+}
+.card .image3{
+    height: 17rem;
+}
+.card:hover .image3{
+    left: 80%;
+    height: 400px;
+}
+
+/* the story */
+.story-container{
+    margin: 2rem 10rem 2rem 10rem ;
+}
+
+.story-container h2{
+    text-align: center;
+    margin: 0.5rem;
+    text-transform: uppercase;
+}
+
+.story-container p{
+    padding: 2rem;
+    text-align: center;
+}
+/* footer */
+.footer h2{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer p{
+    text-align: center;
+    margin: 3rem;
+}
+
+.footer::after{
+    content: '';
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+}
+.bottom-links-carrier{
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    list-style: none;
+}
+.bottom-home{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bottom-links {
+    padding: 0 0 0 5rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bottom-links:hover{
+    font-size: 23px;
+    transition: 0.5s;
+}
+
+
+.bottom-home:hover{
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.your-experience{
+    padding: 3rem;
+    margin: 0 5rem;
+}
+.your-experience h2{
+    text-align: center;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+
+}
+.your-experience p{
+    margin: 0 8rem;
+    text-align: center;
+    color: rgb(65, 65, 65);
+}
+
+/* ============== media query =============================== */
+@media screen and (max-width:480px){
+
+    
+    /* the main  start*/
+    .entry-pic img{
+        margin: -1.5rem 0 0 0;
+    }
+    .entry-description{
+        margin: 0;
+    }
+
+    .entry-description h2{
+        margin: -7rem 2rem 0 -3rem;
+        font-size:2rem;
+    }
+    .entry-description p{
+        font-size: 0.8rem;
+        margin: 2rem -2rem 0 -5rem;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 7rem 0 7rem 0;
+    }
+
+    .story-container h2{
+        position: absolute;
+        margin: -2rem 5rem 2rem -3.5rem;
+    }
+
+    .story-container p{
+        text-align: center;
+        margin: 2rem -6rem 0 -6rem;
+    }
+
+    .bottom-links-carrier{
+        margin: 0 10rem 0 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-links-carrier .bottom-home{
+        margin: 0 0 0 5rem;
+    }
+
+    .bottom-links-carrier li{
+        margin: 0 -0.7rem 0 -6rem;
+        text-align: center;
+        padding:2rem;
+        
+    }
+
+     /* social media */
+     .social-media{
+        margin: 0 0 2rem 6rem ;
+    }
+    .social-media i{
+        font-size: 2rem;
+        color: black;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .social-media i:hover{
+        transform: rotate(-45deg);
+        transition: 0.2s;
+        font-size: 2.5rem;
+        /* text-shadow: 0 5px 10px rgba(0, 0, 0, 0.405); */
+        box-shadow:0 5px 10px rgba(0, 0, 0, 0.405) ;
+        border-radius: 20rem;
+    }
+
+}
+
